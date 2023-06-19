@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: calc($index * 25);
+  max-height: calc($index * 20);
+  padding: $index;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.26);
+  border: 2px #686868 solid;
+  border-radius: 50px;
+}

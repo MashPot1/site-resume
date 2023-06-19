@@ -1,0 +1,43 @@
+@import "./variables.scss";
+@import "./header.scss";
+@import "./container.scss";
+@import "./hero.scss";
+@import "./about.scss";
+@import "./projects.scss";
+@import "./contacts.scss";
+
+.App {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, #dbdbdb 0%, #f1f1f1 100%);
+  overflow: auto;
+  width: 100%;
+  height: auto;
+  margin: 0px auto;
+  will-change: transform;
+}
+
+.title {
+  position: relative;
+  margin-bottom: calc($index);
+  width: calc($index * 14.5);
+  background-color: #0f0f0f;
+  text-align: center;
+  font-size: calc($index * 0.8);
+  font-family: raleway-c;
+  text-transform: uppercase;
+  letter-spacing: calc($index * 0.5);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  position: relative;
+  background-color: rgb(26, 26, 26);
+  text-align: center;
+  font-size: calc($index * 0.6);
+  font-family: raleway-c;
+  letter-spacing: calc($index * 0.1);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

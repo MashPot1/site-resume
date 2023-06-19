@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+$index: calc(1vw + 1vh);
+
+.block {
+  max-width: calc($index * 10);
+  max-height: calc($index * 10);
+  input {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: calc($index * 1.4);
+    font-weight: bold;
+    font-family: "Inter";
+    padding: calc($index * 0.4) calc($index * 0.6);
+    letter-spacing: 1.3px;
+    outline: none;
+    margin: calc($index * 0.8) 0;
+    border-radius: calc($index * 0.5);
+    width: 100%;
+  }
+}
+
+.currencies {
+  font-size: calc($index * 0.7);
+  display: flex;
+  // width: calc(calc(1vw + 1vh) * 10);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  overflow: hidden;
+  justify-content: center;
+
+  li {
+    display: inline-flex;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    justify-content: center;
+    flex: 1;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.03);
+    }
+
+    &:active {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    &.active {
+      padding: 0px 0px;
+      background-color: #16b67f;
+      color: #fff;
+    }
+
+    &:last-of-type {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0px 0px;
+
+      flex: 0 0 50px;
+      border-right: 0;
+
+      a {
+        padding: calc($index * 0.4) 20px;
+      }
+
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
+
+.doubleArrow {
+  margin: calc($index * 2.8) calc($index * 0.4);
+}

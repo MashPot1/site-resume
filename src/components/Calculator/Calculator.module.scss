@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+$index: calc(1vw + 1vh);
+
+.wrapper {
+  max-width: calc($index * 13.4);
+  max-height: calc($index * 20);
+  // margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    "total total total total"
+    "modif modif modif oper"
+    "digit digit digit oper"
+    "digit digit digit oper"
+    "digit digit digit oper"
+    "digit digit digit oper";
+  grid-auto-columns: 1fr;
+  border: #333 solid;
+  border-radius: 8px;
+  background-color: #222;
+
+  button {
+    font-size: calc($index );
+    border: 8px solid #424242;
+    border-radius: 60px;
+    cursor: pointer;
+  }
+
+  /* All things Grid, Flexbox, Box Alignment */
+
+  .showInput {
+    padding: calc($index * 1.2);
+    height: 40px;
+    width: calc($index * 13.2);
+    overflow-y: hidden;
+    // white-space: nowrap;
+    grid-area: total;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 2rem;
+    font-family: "Inter";
+    border-bottom: 1px #333 solid;
+    // resize: none;
+    color: #bbb;
+    
+
+  }
+
+  .modifiers {
+    // background-color: #333;
+    display: grid;
+    grid-area: modif;
+    grid-auto-flow: column;
+    // grid-auto-columns: 1fr;
+    button {
+      background-color: #ccc;
+    }
+  }
+
+  .operations {
+    // background-color: #333;
+    display: grid;
+    grid-area: oper;
+    button {
+      background-color: orange;
+      width: calc($index * 3);
+      height: calc($index * 3);
+    }
+  }
+
+  .digits {
+    // background-color: #333;
+    grid-area: digit;
+    display: flex;
+    flex-wrap: wrap;
+    button {
+      margin: 0;
+      flex: 1 0 27%;
+      background-color: #efefef;
+      // min-width: calc($index * 2.8);
+      height: calc($index * 3.3);
+    }
+  }
+}

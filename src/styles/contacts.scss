@@ -1,0 +1,21 @@
+.contacts {
+  display: flex;
+  width: 100%;
+  height: 70vh;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  .container {
+    min-height: auto;
+    max-height: calc($index * 30);
+    max-width: 80vw;
+    flex-direction: column;
+    align-items: center;
+    gap: $index;
+    a {
+      display: flex;
+      align-items: center;
+      margin-right: $index;
+    }
+  }
+}

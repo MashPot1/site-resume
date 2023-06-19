@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+$index: calc(1vw + 1vh);
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .input {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    font-size: calc($index * 0.6);
+    padding: calc($index * 0.6) calc($index * 0.6);
+    letter-spacing: 1.3px;
+    outline: none;
+    margin-top: calc($index * 0.6);
+    margin-bottom: calc($index * 0.6);
+    margin-right: calc($index * 0.6);
+    border-radius: 5px;
+    width: 100%;
+    color: #000000;
+    background-color: #ffffff;
+
+    &__checked {
+      text-decoration: line-through;
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      font-size: calc($index * 0.6);
+      font-weight: 700;
+      padding: calc($index * 0.6) calc($index * 0.6);
+      letter-spacing: 1.3px;
+      outline: none;
+      margin-top: calc($index * 0.6);
+      margin-bottom: calc($index * 0.6);
+      margin-right: calc($index * 0.6);
+      border-radius: 5px;
+      width: 100%;
+      color: #000000;
+      background-color: #ffffff;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+Button {
+  font-size: calc($index * 0.6);
+  margin-right: calc($index * 0.6);
+}
