@@ -33,16 +33,17 @@ $index: calc(1vw + 1vh);
   li {
     display: inline-flex;
     border-right: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: #fff;
     cursor: pointer;
     justify-content: center;
     flex: 1;
 
     &:hover {
-      background-color: rgba(0, 0, 0, 0.03);
+      background-color: rgba(0, 0, 0, 0.5);
     }
 
     &:active {
-      background-color: rgba(0, 0, 0, 0.05);
+      background-color: rgba(0, 0, 0, 0.5);
     }
 
     &.active {

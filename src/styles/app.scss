@@ -9,7 +9,18 @@
 .App {
   margin: 0;
   padding: 0;
-  background: linear-gradient(180deg, #dbdbdb 0%, #f1f1f1 100%);
+  overflow: auto;
+  width: 100%;
+  height: auto;
+  margin: 0px auto;
+  will-change: transform;
+}
+
+
+.content {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(180deg, $color-bg 0%, $color-bg2 100%);
   overflow: auto;
   width: 100%;
   height: auto;

@@ -119,7 +119,7 @@ function App() {
                 </li>
               </ul>
             </div>
-            and another...
+            and other...
           </div>
         </div>
 
